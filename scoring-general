@@ -1,4 +1,4 @@
-var LEVEL, COUNTRY, HOBBY, YEAR, SELECTBOX_2, CONTACTS;
+var level, country, hobby, budget, selectbox_2, contacts;
 
 
 var we_tabs_next_button = '[bloc=next-tab]';
@@ -7,7 +7,7 @@ var we_tabs_next_button = '[bloc=next-tab]';
 
     var we_activeTab,we_indexOfActiveTab, we_indexOfNextTab, we_indexOfPrevTab, we_prevTab, we_amountOfTabs, nextTab;
 
-    var tabList = ['LEVEL'];
+    var tabList = ['level'];
 
     openTab(tabList[0]);
 
@@ -62,10 +62,10 @@ var we_tabs_next_button = '[bloc=next-tab]';
       $(tab).addClass("w--tab-active");
       $(tab_link).siblings("a").removeClass("w--current");
       $(tab_link).addClass("w--current");
-    }$("[name=LEVEL]").on("input", function () {
-    LEVEL = getValueFromInput("LEVEL");
+    }$("[name=level]").on("input", function () {
+    level = getValueFromInput("level");
 
-      nextTab = 'COUNTRY';
+      nextTab = 'country';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -80,15 +80,15 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=COUNTRY]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=country]')).attr('prev-tab',we_activeTab);
 
       });
 
-    $("[name=LEVEL]").parent("label.w-radio").on("click", function () {
+    $("[name=level]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      LEVEL = getValueFromInput("LEVEL");
+      level = getValueFromInput("level");
 
-      nextTab = 'COUNTRY';
+      nextTab = 'country';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -103,13 +103,13 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=COUNTRY]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=country]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=COUNTRY]").on("input", function () {
-    COUNTRY = getValueFromInput("COUNTRY");
+    $("[name=country]").on("input", function () {
+    country = getValueFromInput("country");
 
-      nextTab = 'HOBBY';
+      nextTab = 'hobby';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -124,15 +124,15 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=HOBBY]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=hobby]')).attr('prev-tab',we_activeTab);
 
       });
 
-    $("[name=COUNTRY]").parent("label.w-radio").on("click", function () {
+    $("[name=country]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      COUNTRY = getValueFromInput("COUNTRY");
+      country = getValueFromInput("country");
 
-      nextTab = 'HOBBY';
+      nextTab = 'hobby';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -147,13 +147,13 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=HOBBY]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=hobby]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=HOBBY]").on("input", function () {
-    HOBBY = getValueFromInput("HOBBY");
+    $("[name=hobby]").on("input", function () {
+    hobby = getValueFromInput("hobby");
 
-      nextTab = 'YEAR';
+      nextTab = 'budget';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -168,15 +168,15 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=YEAR]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=budget]')).attr('prev-tab',we_activeTab);
 
       });
 
-    $("[name=HOBBY]").parent("label.w-radio").on("click", function () {
+    $("[name=hobby]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      HOBBY = getValueFromInput("HOBBY");
+      hobby = getValueFromInput("hobby");
 
-      nextTab = 'YEAR';
+      nextTab = 'budget';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -191,13 +191,13 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=YEAR]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=budget]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=YEAR]").on("input", function () {
-    YEAR = getValueFromInput("YEAR");
+    $("[name=budget]").on("input", function () {
+    budget = getValueFromInput("budget");
 
-      nextTab = 'SELECTBOX_2';
+      nextTab = 'selectbox_2';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -212,15 +212,15 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=SELECTBOX_2]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=selectbox_2]')).attr('prev-tab',we_activeTab);
 
       });
 
-    $("[name=YEAR]").parent("label.w-radio").on("click", function () {
+    $("[name=budget]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      YEAR = getValueFromInput("YEAR");
+      budget = getValueFromInput("budget");
 
-      nextTab = 'SELECTBOX_2';
+      nextTab = 'selectbox_2';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -235,13 +235,13 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=SELECTBOX_2]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=selectbox_2]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=SELECTBOX_2]").on("input", function () {
-    SELECTBOX_2 = getValueFromInput("SELECTBOX_2");
+    $("[name=selectbox_2]").on("input", function () {
+    selectbox_2 = getValueFromInput("selectbox_2");
 
-      nextTab = 'CONTACTS';
+      nextTab = 'contacts';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -256,15 +256,15 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=CONTACTS]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=contacts]')).attr('prev-tab',we_activeTab);
 
       });
 
-    $("[name=SELECTBOX_2]").parent("label.w-radio").on("click", function () {
+    $("[name=selectbox_2]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      SELECTBOX_2 = getValueFromInput("SELECTBOX_2");
+      selectbox_2 = getValueFromInput("selectbox_2");
 
-      nextTab = 'CONTACTS';
+      nextTab = 'contacts';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -279,18 +279,18 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=CONTACTS]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=contacts]')).attr('prev-tab',we_activeTab);
 
       });
     $('[bloc=next-tab]').on('click',function() {
-  if($('.w--tab-active').attr('data-w-tab')=='CONTACTS') {
+  if($('.w--tab-active').attr('data-w-tab')=='contacts') {
           $('[bloc=step-buttons]').css({
       'display':'none'+' ',
     });
 
       }});
 $('[bloc=prev-tab]').on('click',function() {
-  if($('.w--tab-active').attr('data-w-tab')=='SELECTBOX_2') {
+  if($('.w--tab-active').attr('data-w-tab')=='selectbox_2') {
           $('[bloc=step-buttons]').css({
       'display':'flex'+' ',
     });
