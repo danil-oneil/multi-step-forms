@@ -1,8 +1,8 @@
 var level, country, hobby, budget, selectbox_2, contacts;
 
 
-var we_tabs_next_button = '#next-tab';
-    var we_tabs_prev_button = '#prev-tab';
+var we_tabs_next_button = '[bloc=next-tab]';
+    var we_tabs_prev_button = '[bloc=prev-tab]';
     var we_tabs_active_class = 'active';
 
     var we_activeTab,we_indexOfActiveTab, we_indexOfNextTab, we_indexOfPrevTab, we_prevTab, we_amountOfTabs, nextTab;
@@ -291,7 +291,7 @@ var we_tabs_next_button = '#next-tab';
       }});
 $('[bloc=prev-tab]').on('click',function() {
   if($('.w--tab-active').attr('data-w-tab')=='selectbox_2') {
-          $('[bloc=step-buttons]').css({
+          $('[bloc=buttons]').css({
       'display':'flex'+' ',
     });
 
