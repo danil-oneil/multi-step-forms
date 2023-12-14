@@ -1,3 +1,5 @@
+<script src="https://weblocks.io/library.js"></script>
+<script>
 var level, country, hobby, budget, selectbox_2, contacts;
 
 
@@ -296,3 +298,5 @@ $('#prev-tab').on('click',function() {
     });
 
       }});
+
+</script>     
