@@ -1,6 +1,4 @@
-<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-inputactive@1/inputactive.js">
-<script src="https://weblocks.io/library.js"></script>
-<script>
+
 var level, country, hobby, budget, selectbox_2, contacts;
 
 var we_tabs_next_button = '[bloc=next-step]';
@@ -298,4 +296,3 @@ $('[bloc=prev-step]').on('click',function() {
     });
 
       }});
-</script>
