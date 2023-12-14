@@ -291,7 +291,7 @@ var we_tabs_next_button = '[bloc=next-tab]';
       }});
 $('[bloc=prev-tab]').on('click',function() {
   if($('.w--tab-active').attr('data-w-tab')=='selectbox_2') {
-          $('[bloc=buttons]').css({
+          $('[bloc=step-buttons]').css({
       'display':'flex'+' ',
     });
 
