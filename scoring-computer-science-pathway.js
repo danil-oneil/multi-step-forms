@@ -3,7 +3,7 @@ var level, country, budget, selectbox_2, contacts;
 
 var we_tabs_next_button = '[bloc=next-step]';
     var we_tabs_prev_button = '[bloc=prev-step]';
-    var we_tabs_active_class = 'active-next-step';
+    var we_tabs_active_class = 'active';
 
     var we_activeTab,we_indexOfActiveTab, we_indexOfNextTab, we_indexOfPrevTab, we_prevTab, we_amountOfTabs, nextTab;
 
@@ -241,14 +241,14 @@ var we_tabs_next_button = '[bloc=next-step]';
     $('[bloc=next-step]').on('click',function() {
   if($('.w--tab-active').attr('data-w-tab')=='contacts') {
           $('[bloc=step-buttons]').css({
-      'display':'none'+' ',
+      'display':'none',
     });
 
       }});
 $('[bloc=prev-step]').on('click',function() {
   if($('.w--tab-active').attr('data-w-tab')=='selectbox_2') {
           $('[bloc=step-buttons]').css({
-      'display':'flex'+' ',
+      'display':'flex',
     });
 
       }});
